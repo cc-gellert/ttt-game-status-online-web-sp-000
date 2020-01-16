@@ -23,4 +23,9 @@ def won(board)
 end 
 
 def full?(board)
-  if(board.detect{|space| position_taken?(space)})
+  if(board.detect{ |space| position_taken?(space) })
+    return false 
+  else
+    return true 
+  end
+end 
