@@ -21,3 +21,6 @@ def won(board)
     puts "win"
   end
 end 
+
+def full?(board)
+  if(board.reject())
