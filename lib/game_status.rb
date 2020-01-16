@@ -23,7 +23,7 @@ def won(board)
 end 
 
 def full?(board)
-  if(board.detect{ |space| position_taken?(board, space) })
+  if(board.reject{ |space| position_taken?(board, space) })
       return false
     else
       return true 
